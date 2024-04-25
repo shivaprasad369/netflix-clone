@@ -110,11 +110,11 @@ export const fetchMoviesByGenres=createAsyncThunk('netflix/movieByGenres',async(
     return genres;
 })
  export const getUserLikedMovie=createAsyncThunk('netflix/getUserLikedMovie',async(email)=>{
-const {data:{movies}}=await axios.get(`http://localhost:5000/api/user/liked/${email}`)
+const {data:{movies}}=await axios.get(`https://global-news-2.onrender.com//api/user/liked/${email}`)
 return movies;
  })
  export const removeFromLikedMovie=createAsyncThunk('netflix/removeLikedMovie',async({email,movieId})=>{
-    const {data:{movies}}=await axios.put(`http://localhost:5000/api/user/delete`,{email,movieId})
+    const {data:{movies}}=await axios.put(`https://global-news-2.onrender.com//api/user/delete`,{email,movieId})
     return movies;
      })
 export const store=configureStore({

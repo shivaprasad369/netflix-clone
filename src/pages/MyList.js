@@ -6,9 +6,7 @@ import {  getUserLikedMovie } from "../store";
 import { onAuthStateChanged } from "firebase/auth";
 import { firebaseAuth } from "../utils/firebase-config";
 import Navbar from "../component/Navbar";
-import NotAvailabel from "../component/NotAvailabel";
-import Slider from "../component/Slider";
-import SelectGenra from "../component/SelectGenra";
+i
 import Card from "../component/Card";
 export default function MyList() {
   const navigate = useNavigate();
